@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="stylesheet" href="Css/common.css">
+    <link rel="stylesheet" href="Css/login.css">
     <title>Fraazo | Buy Fruites & Vegetables Online</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -31,11 +32,60 @@
         </div>
         <div><i class="fa-solid fa-cart-shopping-fast"></i>Cart</div>
         <div><i class="fa-solid fa-wallet"></i>Credits</div>
-        <div><i class="fa-solid fa-user"></i>User</div>
+        <div><i class="fa-solid fa-user"></i><span id="user">Login</span></div>
     </div>
 
     <!-- ----------------------------------------------------DASHBOARD PHOTOS----------------------------------------------------------------- -->
 
+    <!-- xxxxxxxxxxxxxxxx  LOGIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <div class="signup-cont">
+        <button id="close-btn">&times;</button>
+        <div class="login-body">
+            <h2>Welcome to Fraazo!</h2> 
+            <p>Sign In to track your Order and More.</p>
+            <p id="upMobileText"></p>
+            <input type="text" placeholder="Enter your Mobile Number" id="number">
+            <p>We will send you an OTP on this number</p>
+            <button id="get-otp">Get OTP</button>
+        </div>
+    </div>
+    <div id="overlay" class=""></div>
+
+    <div class="otp-container">
+        <button id="close-btn2">&times;</button>
+        <div class="login-body">
+            <h2>Welcome to Fraazo!</h2> 
+            <p>Sign In to track your Order and More.</p>
+            <p id="upMobileText"></p>
+            <input type="text" placeholder="Enter 6-Digit OTP" id="fill-otp">
+            <p>OTP has been sent to <span id="spana"></span> <br>
+                Haven't received your OTP yet?</p>
+            <button id="check-otp">Continue</button>
+        </div>
+    </div>
+
+    <div class="customer-info">
+        <button id="close-btn3">&times;</button>
+        <h2>Hello New Customer</h2>
+        <p>Register now for Unbelievable Discounts.</p>
+        <form id="info-form">
+            <div id="names-div">
+                <input type="text" placeholder="First Name" id="firstName">
+                <input type="text" placeholder="Last Name" id="lastName">
+            </div>
+            <input type="email" placeholder="Email id" id="email">
+            <input type="number" placeholder="Mobile No." id="mobileNumber">
+            <div id="status">
+                <label for="title">Title :  <label for="m">Mr.</label> </label> <input type="radio" id="mr" name="title" >  <label for="mrs">Mrs.</label> <input type="radio" id="mrs" name="title" > <label for="miss">Miss</label> <input type="radio" id="miss" name="title" >
+            </div>
+            <input type="submit" id="final-submit">
+        </form>
+        
+        
+    </div>
+
+    <!-- xxxxxxxxxxxxxxxx  LOGIN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
     
     
     <div id = "first-screen">
@@ -1151,3 +1201,4 @@ function KitchenSteplesData(arr,left,right){
 
 
 </script>
+<script src="Js/login.js"></script>
