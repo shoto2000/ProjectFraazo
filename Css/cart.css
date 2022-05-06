@@ -1,0 +1,143 @@
+/* <!-- -------------------------------------------------------cart----------------------------------------------------------- --> */
+#root {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#price-checkout{
+    width: 20%;
+    line-height: 30px;
+}
+
+
+
+#container {
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    color: black;
+}
+
+#container>div {
+    border: 1px solid rgb(236, 235, 235);
+}
+
+#container>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#container>div>img {
+    width: 100%;
+    background-color: rgb(245, 243, 243);
+}
+
+#container>div>div {
+    margin: auto;
+    width: 95%;
+}
+
+.priceCartDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.priceStore {
+    display: flex;
+    min-width: 40%;
+    justify-content: space-between;
+}
+
+.priceStore>h5{
+    color: black;
+    font-size: 15px;
+}
+
+.priceStore>h5:last-child {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.quantity-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+}
+
+.quantity-btn>button {
+    height: 30px;
+    border: 1px solid #4FBB90;
+    background-color: transparent;
+
+}
+
+.quantity-btn>p {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-btn>button:first-child {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.quantity-btn>button:last-child {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.quantity-btn > button:hover{
+    color: white;
+    background-color: #4FBB90;
+}
+
+.priceDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerDiv {
+    text-align: center;
+}
+
+.innerDiv>p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.innerDiv>p:nth-child(1){
+    height: 40px;
+}
+
+.innerDiv>p:nth-child(2){
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+.innerDiv>button {
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.innerDiv>button:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
