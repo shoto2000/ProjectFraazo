@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="common.css">
+    <!-- <link rel="stylesheet" href="Css/login.css"> -->
+    <title>Fraazo | Buy Fruites & Vegetables Online</title>
+    <style>
+        /* ------------------------------------------------------------------COMMON CSS--------------------------------------------------------- */
+        body{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 0px;
+        }
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: grey;
+        }
+
+        /* <!-- ------------------------------------------------------NAVBAR------------------------------------------------------------ --> */
+        #navbar{
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 25px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 2;
+        }
+        #logo{
+            width: 10%;
+        }
+        #logo>img{
+            width: 100%;
+        }
+        #area>select{
+            border: 0px;
+        }
+        #search{
+            width: 45%;
+        }
+        #search>input{
+            width: 100%;
+            padding: 8px;
+            border-radius: 30px;
+            margin: auto;
+            border: 0.5px solid gray;
+            position: relative;
+        }
+
+        .fa-magnifying-glass{
+            color: grey;
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 44%;
+        }
+        .fa-solid{
+            color: grey;
+        
+        }
+
+        /* <!-- -------------------------------------------------------FOOTER----------------------------------------------------------- --> */
+        #foooter-cloud{
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        #foooter-cloud>img{
+            width: 100%;
+        }
+        #footer{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(172, 166, 166);
+            padding: 15px;
+            background-color: rgb(13, 82, 65);
+            margin-top: -25px;
+        }
+        #footer>p{
+            font-size: 12px;
+            width: 90%;
+            text-align: justify;
+            margin: auto;
+            
+        }
+        #footer>h3{
+            text-align: center;
+            
+        }
+        #footer_content{
+            margin: auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 100px;
+        }
+        #footer1>img{
+            width: 100%;
+        }
+
+        #footer1>p{
+            text-align: justify;
+            margin-top: 30px;
+        }
+        #footer_content>div>p{
+            margin: 5px;
+        }
+
+    /* ------------------------------------------------------------------COMMON CSS--------------------------------------------------------- */
+        
+
+
+        #specification{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #specification>#pro_photo{
+            width: 40%;
+            
+            
+        }
+        #specification>#pro_photo>img{
+            width: 100%;
+        }
+        #rdata{
+            width: 50%;
+        }
+        .pro_data{
+            margin-right: 30px;
+            display: block;
+            padding: 10px;
+        }
+        .pro_data>p:nth-child(2){
+            font-size: 12px;
+        }
+        .pro_data>button:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+
+        #myfile{
+            width: 100%;
+        }
+        #myfile>div>p{
+            font-size: 10px;
+            width: 100%;
+        }
+
+
+
+        .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 14px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+</head>
+<body>
+    <div id = "navbar">
+        <div id = "logo">
+            <img src = "C:\Users\anpat\OneDrive\Desktop\FraazoProject\ProjectFraazo\Images\download.png"/> </div>
+        <div id = "area">
+            <i class="fa-solid fa-location-dot"></i>
+            <select name="" id="city">
+                <option value="">Home</option>
+                <option value="">Ahmedabad</option>
+                <option value="">Mumbai</option>
+                <option value="">Banglore</option>
+            </select>
+        </div>
+        <div id = "search">
+            <input type="text" placeholder = "find fresh-vegetables,fruits and dairy...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        <div><i class="fa-solid fa-cart-shopping-fast"></i>Cart</div>
+        <div><i class="fa-solid fa-wallet"></i>Credits</div>
+        <div><i class="fa-solid fa-user"></i><span id="user">Login</span></div>
+    </div>
+    <!-- -------------------------------------------------------Product Data---------------------------------------------------------------- -->
+
+   <div id = "specification">
+       <div id = "pro_photo">
+
+       </div>
+
+       <div id = "rdata">
+           <div class = "pro_data">
+
+           </div>
+
+
+           <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Benefits')">Benifits</button>
+                        <button class="tablinks" onclick="openCity(event, 'Info')">Info</button>
+                    </div>
+                    
+                    <!-- Tab content -->
+                    <div id = "myfile">
+                        <div id="Description" class="tabcontent">
+                            <h3>Description</h3>
+                            <p>- Alphanso mango also very healthy highly contains vitamins like Vitamin E, Vitamin A, Carotene and minerals like Magnesium,
+                                Manganese, Phosphorus. - Did you know it helps to regulating cholestrol levels in body and digestion process by adding mango
+                                in your diet during summer season. It can be used in dried form as well and used as part of salads. 
+                                - It is also season best fruit to increases eye sight, prevents night blindness and dry eyes health issues.</p>
+                        </div>
+                        
+                        <div id="Benefits" class="tabcontent">
+                            <h3>Benefits</h3>
+                            <p> Devgad Alphanso mangoes are naturally grown in the Devgad district of Maharashtra region of India. - 
+                                Devgad Alphonso has a stronger and thicker coat. Hence, they’re less prone to getting wrinkles. - "Alphonso" originated from a 
+                                Portuguese general’s name 'Afonso de Albuquerque'. - Alphonso mango
+                                is a very costly variety of fruit in the world also know for best in taste and aroma fruit.</p>
+                        </div>
+                        
+                        <div id="Info" class="tabcontent">
+                            <h3>Info</h3>
+                            <p>- Alphanso mango also very healthy highly contains vitamins like Vitamin E, Vitamin A, Carotene and minerals like Magnesium, Manganese,
+                                Phosphorus. - Did you know it helps to regulating cholestrol levels in body and digestion process by adding mango in your diet during 
+                                summer season. It can be used in dried form as well and used as part of salads. - It is also season best fruit to increases eye sight,
+                                prevents night blindness and dry eyes health issues.</p>
+                        </div>
+                    </div>
+
+       </div>
+   </div>
+
+    
+      <!-- -------------------------------------------------------FOOTER---------------------------------------------------------------- -->
+    
+      <div id = "foooter-cloud"><img src = "https://fraazo.com/static/footerDesign-26fcca451f726500fd06e7fc02d09cb4.svg"/></div>
+
+      <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+  
+      <div id = "footer">
+          <div id = "footer_content">
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <div id = "footer1">
+                      <img src = "Images/download.png"/>
+                      <p>Order online vegetables & fruits
+                          directly from the farm. Fraazo is
+                          online platform that allows customer
+                          to get farm fresh produce directly
+                          from farmers.</p>
+                  </div>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>USEFUL LINKS</b></p>
+                  <p>Privacy & Policy</p>
+                  <p>FAQ</p>
+                  <p>Terms & Condition</p>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>Cities We Serve</b></p>
+                  <p>Mumbai</p>
+                  <p>Hyderabad</p>
+                  <p>Delhi</p>
+                  <p>Banglore</p>
+                  <p>Pune</p>
+                  <p>Chennai</p>
+                  <p>Hyderabad</p>
+                  <p>Noida</p>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>Connect With Us</b></p>
+                  <p>Support@fraazo.com</p><br>
+                  <p>+91 9152291522</p><br>
+                  <p>102, We Work Vijay Diamond, A3 & B2,
+                      Cross Road B, MIDC, Andheri (East),
+                      Mumbai City MH 400093.</p>
+                      <br>
+                  <p><b>Download The App</b></p>
+                  <br>
+                  <div>
+                      <img src = "Images/Play1.png"/>
+                      <img src = "Images/Playstore.png"/>
+                  </div>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+          </div>
+  
+          <!-- ------------------------------------------------------------------------------------------------------------------ -->
+  
+          <h1 style = "color: white;">Fresh Fruits & Vegetables Grocery Shopping Online</h1><br>
+          <p>
+              The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits
+              and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep.
+              Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a
+              click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, 
+              Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its 
+              hassle-free home delivery options. You can choose the delivery slot as per your choice and schedule
+              your order accordingly. Or you can simply opt for the option of 90 mins Express Delivery and get your
+              order delivered in not more than 90 mins. The farm fresh fruits and vegetables on Fraazo are available
+              at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can 
+              save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets
+              or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of 
+              freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies 
+              from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from
+              farm to table in less than 12 hours.With our Safe & Hygienic packaging and minimal multiple handling, 
+              we ensure you get the best quality fresh produce.
+          </p>
+          <br>
+          <p>The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. 
+          The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, 
+          starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli,
+          lettuce etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo,
+          Fresh Cut-Veg Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on 
+          vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, 
+          Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo
+          accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, 
+          JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing 
+          items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/  replace your
+          product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat 
+          Support or Call on 9152291522.</p>
+          <br>
+          <hr>
+          <h3>© Copyrights 2021 - 2022. Fraazo. All Rights Reserved.</h3>
+      </div>
+  
+      <!-- ------------------------------------------------------------------------------------------------------------------ -->
+  </body>
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+  </html>
+  <script src = "Js/cartAdd.js"></script>
+
+  <script>
+
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+    var arr = JSON.parse(localStorage.getItem("productSpec"));
+
+    var photo = document.createElement("img");
+    photo.setAttribute("src",arr.img)
+
+    var heading = document.createElement("p")
+    heading.innerText = arr.name;
+
+    var qty = document.createElement("p");
+    qty.innerText = arr.quantity;
+
+    var prc = document.createElement("p");
+    prc.innerText = "₹. " + arr.price;
+
+    var btn = document.createElement("button");
+    btn.innerText = "ADD";
+    btn.style.padding = "5px 15px 5px 15px";
+    btn.style.borderRadius = "20px"
+    btn.addEventListener("click", function () {
+            Add(arr);
+        })
+
+    document.querySelector(".pro_data").append(heading,qty,prc,btn)
+     
+    document.querySelector("#pro_photo").append(photo);
+
+  </script>

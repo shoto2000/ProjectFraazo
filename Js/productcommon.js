@@ -4,6 +4,11 @@ function display(data) {
 
         var pimg = document.createElement("img");
         pimg.src = el.img;
+        pimg.addEventListener("click",function(){
+            console.log(el);
+            localStorage.setItem("productSpec",JSON.stringify(el))
+            window.location.href = "product_page.html"
+        })
 
         var pname = document.createElement("p");
         pname.innerText = el.name;

@@ -345,6 +345,7 @@
 
 <!-- <script src = "index.js"></script> -->
 <script src="Js/product.js"></script>
+<script src="js/cartAdd.js"></script>
 
 <script>
     var swiper = new Swiper('.swiper', {
@@ -531,16 +532,16 @@ function PlusBestRight(){
  function BestDealData(arr,left,right){   
       
       document.querySelector("#best-deals").innerHTML = null;
-          for(var i = left ; i<right ; i++){
+          for(var i = left ; i<right ; i++){ 
 
           var box = document.createElement("div");
 
           var pimg = document.createElement("img");
           pimg.src = arr[i].img;
-
+          
           var pname = document.createElement("p");
           pname.innerText = arr[i].name;
-
+          
           var pquantity = document.createElement("p");
           pquantity.innerText = arr[i].quantity;
 
@@ -843,8 +844,6 @@ function PlusVegLeft(){
           DailyVegData(dailyData,left,right)
       }else
       {
-        // console.log(right,left) ;
-      
       DailyVegData(dailyData,left,right)
       }
       
