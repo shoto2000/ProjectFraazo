@@ -1,0 +1,211 @@
+body {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0px;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #808080;
+  background-color: #ffffff;
+}
+
+/* <!-- ------------------------------------------------------------------------------------------------------------------ --> */
+/* #navbar {
+  margin-top: 10px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+#logo {
+  width: 10%;
+}
+#logo > img {
+  width: 100%;
+}
+#search {
+  width: 45%;
+  height: 40px;
+}
+#search > input {
+  width: 100%;
+  padding: 14px 45px 14px 15px;
+  border-radius: 24px;
+  margin: auto;
+  border: 1px solid #ddd;
+  position: relative;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.fa-magnifying-glass {
+  color: #999;
+  position: absolute;
+  top: 28px;
+  left: 75%;
+  font-size: 14px;
+}
+.fa-solid {
+  color: grey;
+} */
+
+/* <!-- ------------------------------------------------------------------------------------------------------------------ --> */
+#first-screen {
+  /* margin-top: 50px; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* -----------------------------------------------swiper Part---------------------------------------------------- */
+#slider_window {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+.swiper-slide img {
+  width: 100%;
+}
+/* -----------------------------------------------swiper Part---------------------------------------------------- */
+
+#right_side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#right_side > div {
+  width: 100%;
+}
+#right_side > div > img {
+  width: 100%;
+}
+
+/* <!-- -------------------------------------------------CATEGORY----------------------------------------------------------------- --> */
+#category {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#category > div {
+  width: 24%;
+}
+#category > div > a > img {
+  width: 100%;
+}
+/* <!-- ----------------------------------------------------COMMON FOR PRODUCTS----------------------------------------------------- --> */
+
+hr {
+  width: 90%;
+}
+h1 {
+  margin-left: 5%;
+  margin-bottom: 0px;
+}
+
+/* <!-- ------------------------------------------------------------------------------------------------------------------ --> */
+/* FOR THE FRUITES, VEGETABLES,KITCHEN STAPLES AND OTHER APPEND PARTS */
+
+/* <!-- ----------------------------------------------------APP DOWNLOAD-------------------------------------------------------- --> */
+
+#app-download {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+#app-download > .mobilephoto {
+  width: 50%;
+  margin: auto;
+}
+
+.mobilephoto > img {
+  width: 100%;
+}
+
+#app-download > .login_mobile {
+  padding-top: 50px;
+  width: 40%;
+  display: block;
+}
+
+#app-download > .login_mobile > p:first-child {
+  font-size: 35px;
+  color: black;
+}
+
+.login_mobile > form {
+  display: block;
+  margin-top: 50px;
+}
+
+.login_mobile > form > input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+/* <!-- -------------------------------------------------------FOOTER----------------------------------------------------------- --> */
+#foooter-cloud {
+  width: 100%;
+  margin-bottom: 0px;
+}
+#foooter-cloud > img {
+  width: 100%;
+}
+#footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(172, 166, 166);
+  padding: 15px;
+  background-color: #0d5241;
+  margin-top: -25px;
+}
+#footer > p {
+  font-size: 12px;
+  width: 90%;
+  text-align: justify;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+}
+#footer_content {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+}
+#footer1 > img {
+  width: 100%;
+}
+#footer1 > p {
+  text-align: justify;
+  margin-top: 30px;
+}
+p {
+  margin: 5px;
+}
+
+/* <!-- ----------------------------------------------------------------------------------------------------------------------------- --> */
+#products_page {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+/* <!-- ----------------------------------------------------------------------------------------------------------------------------- --> */
