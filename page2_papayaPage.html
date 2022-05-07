@@ -32,7 +32,7 @@
         </div>
         <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart<span id="carttop"></span></a></div>
         <div><i class="fa-solid fa-wallet"></i>Credits</div>
-        <div><i class="fa-solid fa-user"></i>User</div>
+        <div><i class="fa-solid fa-user"></i><div id="user">Login</div></div>
     </div>
 
     <!-- ----------------------------------------------------PRODUCR PAGES----------------------------------------------------------------- -->
@@ -236,3 +236,13 @@
     display(papayaData);
 </script>
 <script src="js/cartAdd.js"></script>
+
+<!-- ---------- Login JS ------------- -->
+<script>
+    var clintInformation = JSON.parse(localStorage.getItem("clintInfo")) ;
+    console.log(clintInformation)  
+    if(clintInformation != null) {
+        document.querySelector("#user").innerText = clintInformation.firstName ;
+    }
+</script>
+<!-- ---------- Login End JS ------------- -->
