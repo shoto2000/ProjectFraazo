@@ -1,4 +1,214 @@
- // MANGOES
+// Best-Deals
+
+var bestdealArr = [
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VGAV12.png",
+        name: "Beans Cluster (Gavar)",
+        quantity: "250 g",
+        price: 12,
+        strike_price: 16
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/006/605/original/data?1649242645",
+        name: "Tomato (1 kg)",
+        quantity: "1 kg",
+        price: 42,
+        strike_price: 45
+    },
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VARB12.png",
+        name: "Arbi(Colocasia)",
+        quantity: "500 g",
+        price: 35,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/012/original/data?1595253652",
+        name: "Baby Potato",
+        price: 21,
+        quantity: "500 g",
+        strike_price: "",
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/381/original/data?1624199604",
+        name: "Banana Flower",
+        price: 24,
+        quantity: " 1 pc",
+        strike_price: "",
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/389/original/data?1624874955",
+        name: "Fresh Salad Combo (250G Carrot + 500 G Cucumber)",
+        price: 31,
+        quantity: "1 unit",
+        strike_price: 36,
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/390/original/data?1624895924",
+        name: "Mixed Capsicum Combo (1 Pc Capsicum Red + 1 Pc Capsicum Yellow)",
+        price: 104,
+        quantity: "1 unit",
+        strike_price: 107,
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/250/original/data?1642167498",
+        name: "Lemon(100g) / Nimboo / Nibu",
+        quantity: "100g",
+        price: 19,
+        strike_price: 26
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/163/original/data?1640321543",
+        name: "Special Offer Coriander",
+        quantity: "1 unit",
+        price: 4,
+        strike_price: 13
+    },
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VAWL11.png",
+        name: "Amla",
+        quantity: "250 g",
+        price: 42,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/417/original/data?1628778604",
+        name: "Aloevera",
+        quantity: "1 pc ",
+        price: 13,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/263/original/data?1642176073",
+        name: "Cashew & Kismis Combo Pack (Cashew 100gm + Kismis 200gm)",
+        quantity: "1 unit-300 g",
+        price: 149,
+        strike_price: 246
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/579/original/data?1635086198",
+        name: "Cashew 500gms (Pack of 5*100gms)",
+        quantity: "500 g",
+        price: 450,
+        strike_price: 830
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/598/original/data?1635146504",
+        name: "Dry Dates - 400gms (Pack of 2*200gms)",
+        quantity: "400 g",
+        price: 135,
+        strike_price: 184
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/581/original/data?1635086887",
+        name: "Cashew Tukda 200gms (Pack of 2*100gms)",
+        quantity: "200 g",
+        price: 167,
+        strike_price: 236
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/582/original/data?1635086999",
+        name: "Cashew Tukda 500gms (Pack of 5*100gms)",
+        quantity: "500 g",
+        price: 415,
+        strike_price: 590
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/435/original/data?1643108708",
+        name: "Maya Besan 500G",
+        quantity: "500 g",
+        price: 54,
+        strike_price: 59
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/443/original/data?1643108726",
+        name: "Maya Maida 500G",
+        quantity: "500 g",
+        price: 27,
+        strike_price: 31
+    }];
+
+    localStorage.setItem("bestArr",JSON.stringify(bestdealArr))
+
+// Home-Page Fruites Data
+
+var fruiteData = [
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FCHI13.png",
+        name: "Chikoo",
+        quantity: "500 g",
+        price: 38,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/157/original/data?1595448197",
+        name: "Pineapple",
+        quantity: "800 g-1 kg",
+        price: 66,
+        strike_price: ""
+    },
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FMUS1.png",
+        name: "Musk Melon/ Kharabooja",
+        quantity: "1 pc",
+        price: 39,
+        strike_price: 62
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/117/original/data?1616765390",
+        name: "Watermelon",
+        quantity: "1 pc",
+        price: 29,
+        strike_price: 179
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/338/original/data?1620150734",
+        name: "Orange Imported",
+        quantity: "2 pc",
+        price: 38,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/006/original/data?1642616267",
+        name: "Apple Royal Gala",
+        quantity: "4 pc",
+        price: 99,
+        strike_price: 149
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/244/original/data?1613050070",
+        name: "Wood Apple",
+        quantity: "1 pc",
+        price: 18,
+        strike_price: ""
+    },
+    {
+        img: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/432/original/data?1629889583",
+        name: "Grape Fruit",
+        quantity: "1 pc",
+        price: 105,
+        strike_price: ""
+    },
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FAVO21.png",
+        name: "Avocado Indian",
+        quantity: "1 pc",
+        price: 246,
+        strike_price: ""
+    },
+    {
+        img: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBLU1.png",
+        name: "Blueberry",
+        quantity: "1 unit",
+        price: 319,
+        strike_price: ""
+    },
+
+]
+
+    localStorage.setItem("fruiteArr",JSON.stringify(fruiteData))
+
+// MANGOES
 
  var mangoesData = [
     {

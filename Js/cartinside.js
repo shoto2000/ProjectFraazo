@@ -134,6 +134,6 @@ var cartArr = JSON.parse(localStorage.getItem("cartadd"));
     .querySelector("#details")
     .append(totalItem, totalPrice, coupon, aplBtn);
 
-  document.querySelector("#checkout").addEventListener("click", function () {
+  document.querySelector("#Checkout").addEventListener("click", function () {
     window.location.href = "success.html";
   });

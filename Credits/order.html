@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="Css/common.css">
+    <link rel="stylesheet" href="Css/product.css">
+    <title>Fraazo | Buy Fruites & Vegetables Online</title>
+    <style>
+
+        
+body{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+
+        /* <!-- ------------------------------------------------------NAVBAR------------------------------------------------------------ --> */
+        #navbar{
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 25px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 2;
+        }
+        #logo{
+            width: 10%;
+        }
+        #logo img{
+            width: 100%;
+        }
+        #area>select{
+            border: 0px;
+        }
+        #search{
+            width: 45%;
+        }
+        #search>input{
+            width: 100%;
+            padding: 8px;
+            border-radius: 30px;
+            margin: auto;
+            border: 0.5px solid gray;
+            position: relative;
+        }
+
+        .fa-magnifying-glass{
+            color: grey;
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 44%;
+        }
+        .fa-solid{
+            color: grey;
+           
+        }
+
+        /* <!-- ------------------------------------------------------------------------------------------------------------------ --> */
+        #first-screen{
+            /* margin-top: 50px; */
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* -----------------------------------------------swiper Part---------------------------------------------------- */
+        #slider_window{
+            width: 62%;
+            border-radius: 10px;
+        }
+
+        .swiper{
+            width: 100%;
+            height: fit-content;
+        }
+        .swiper-slide img{
+            width: 100%;
+        }
+           /* -----------------------------------------------swiper Part---------------------------------------------------- */
+        
+        #right_side{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+        }
+        #right_side>div{
+            width: 92%;
+            
+        }
+        #right_side>div>img{
+            width: 100%;
+        }
+
+        /* <!-- -------------------------------------------------CATEGORY----------------------------------------------------------------- --> */
+        #category{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #category>div{
+            width: 24%;
+        }
+        #category>div>a>img{
+            border-radius: 20px;
+            width: 100%;
+        }
+       
+       
+        /* <!-- ----------------------------------------------------APP DOWNLOAD-------------------------------------------------------- --> */
+
+        #app-download{
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        #app-download>.mobilephoto{
+            width: 50%;
+            margin: auto;
+        }
+
+        .mobilephoto>img{
+            width: 100%;
+        }
+
+        #app-download>.login_mobile{
+            padding-top: 50px;
+            width: 40%;
+            display: block;
+            
+        }
+
+        #app-download>.login_mobile>p:first-child{
+            font-size: 35px;
+            color: black;
+        }
+
+        .login_mobile>form{
+            display: block;
+            margin-top: 50px;
+        }
+
+        .login_mobile>form>input{
+            width: 90%;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+
+        /* <!-- -------------------------------------------------------FOOTER----------------------------------------------------------- --> */
+        #foooter-cloud{
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        #foooter-cloud>img{
+            width: 100%;
+        }
+        #footer{
+            /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+            color: rgb(172, 166, 166);
+            padding: 15px;
+            background-color: rgb(13, 82, 65);
+            margin-top: -25px;
+        }
+        #footer>h1{
+            color: white;
+            font-weight: 100;
+        }
+        #footer>p{
+            font-size: 12px;
+            width: 90%;
+            text-align: justify;
+            margin: auto;
+            
+        }
+        #footer>h3{
+            text-align: center;
+            
+        }
+        #footer_content{
+            margin: auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 100px;
+        }
+        
+        #footer1 img{
+            width: 100%;
+        }
+        
+        #footer1>p{
+            text-align: justify;
+            margin-top: 30px;
+        }
+        #footer_content>div>p{
+            margin: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            
+        }
+        #footer_content>div>p:first-child{
+            color: white;
+        }
+
+
+        #credit_page{
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        #credit_page>#leftbar{
+            width: 20%;
+            display: block;
+        }
+
+        #credit_page>#leftbar>.user_profile{
+            margin: auto;
+            display: block;
+            align-items: center;
+            width: 30%;
+        }
+        #credit_page>#leftbar>.user_profile>img{
+            width: 100%;
+            margin-bottom: 0;
+            
+        }
+
+        #credit_page>#leftbar>p{
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+            padding: 10px 20px 10px 20px;
+        }
+        #credit_page>#leftbar>p>a{
+            text-decoration: none;
+            color: black;
+        }
+        #rightbar>#orders>div{
+            display: flex;
+            justify-content: space-around;
+        }
+        #rightbar>#orders>div>p{
+            margin-right: 50px;
+        }
+    
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+</head>
+<body>
+    <div id = "navbar">
+        <div id = "logo">
+            <a href="index.html"><img src="Images/download.png" /></a>
+        </div>
+        <div id = "area">
+            <i class="fa-solid fa-location-dot"></i>
+            <select name="" id="city">
+                <option value="">Home</option>
+                <option value="">Ahmedabad</option>
+                <option value="">Mumbai</option>
+                <option value="">Banglore</option>
+            </select>
+        </div>
+        <div id = "search">
+            <input type="text" placeholder = "find fresh-vegetables,fruits and dairy...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+        </div>
+        <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart</a></div>
+        <div><i class="fa-solid fa-wallet"></i>Credits</div>
+        <div><i class="fa-solid fa-user"></i><span id="user">Login</span></div>
+    </div>
+    <!-- -------------------------------------------------------Product Data---------------------------------------------------------------- -->
+
+   <div id = "credit_page">
+        <div id = "leftbar">
+            <div class = "user_profile">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAAC9FBMVEUAAAD66uL48/H28e728u/t7O3LVAXr6uv18fD39PTvsYXty7TkspLNWQrt7O3puJnt7O3NWw7y7u0NDQ3u7e7u7u7y7+3x8PHy7eru7e7w7/Hx7u7t7O3v7u/1zbLliUrx8PHt7O3/eR/nkVbu7e7w7/D+eSDOXxXu7e7flWPwq3vprILSbSjXeDfx8PHzuZLTcC3u7e3w7/Ddjln3x6fqonDOYxroll/+pmrafT3XeTn+fynv7Ozopnn4pm3RbCj8gS77kkr5lE4kJCQRERD9gCr+iTv9j0bbilP6ij3QZyG2VBLRaCHbgELRZh7WfED/nl3+eiL/hjb+toXrnGbOYBb3ij3Vci//kUgtLS3PZBxMTEzWez7/hzf+llDiaAjhtZfmso7ywJ3MWg11dnXjbBFfX1/keCO1tLRCQ0NZWVnNWxE+Pj7SgErkdR8VFRUuKyo2NjYxMjFqamuQkJCEUS/ZlmgxMTGKRRflyrdPUFDZ0MppaWndq4pAQUKvYi5SUlIKCgrp3NJ9cWmZmZhHR0cfHx59SicuExKpWiXlyreNZk7/dhvhYwD9dRnJUQABAAD7cxf////gYgDt7e3kZAH1bxDLUQDxbQ7/eBz3cBP5chXuawvqaAfdXwDoZwXOVQHmZgPYXADSVwDNUgDsagkOBgLVWQDaXgD/dBZWgwzycRj/fCUdCwHw7/A9GQT/gi7fER0uEwNReQv/+fX/iTrMXBD/lE3/8+p0MwgZGRlMZAdMbgmqSwpYJQT39/dNHwX/693pchjmahdpLAjOzs7dZhbZ2dn/nVvechjRYBX/48//zKm4bRJgKgb/07U4ODj/2sGUlJSBOAeSPAD/xZ6NQQ5mawtbZAjLbxSEaA3AUQD/vpLCWRSZRw9zZgtycnKFhYW2TQD/t4biFB6WaQ+hRAD/r3lWVlalbBCgSRChoaH/qW/yVRvAwMC5ubn/pGZfX1/kJx1nZ2fpOBynDxZYcgqop6jHEhqQChKysrLJOxfc7G9xAAAAjHRSTlMABQgMEfz7+BsWEyoK9u4d5O4u/qKIIU4olEY91nw3WzTK+iK/XvHmtHtNLsafV0HaaKmaTmmDNpeMcfVzXH7v7JaB/u3b2tC0pZP+tkfavqzp5nBDybuwZf75/c/Dv/iMdWTZQOycyEv+Gp195eLe1sOXfnjS2rKhmV5YWODb0r24tNOzr6j29uzqsa3F5HsAACMPSURBVHja7MGBAAAAAICg/akXqQIAAAAAAACA2S+f36TBMI4DW8wEDJmHxcQEEk00ggsHR0SJyyBhRKMGx0QvEzVZdttf0r5LQ1r7i9bKGqbdwYRjOdVTDz1De+HEgX9gZ5+3RRrGtngxY4bPcaMJn/f5Pt+3zJkzZ86cOXP+HcHQQhi4OyYWHrEQCoWCwWDgv2Xx5trnynrhUf65Rz67vl6pfAbW4jdvraxcX/gP5Rcj6VeJp0+fPK9WS5vFDY+trc1S6QOmnM8XMO8xiUQimdxOp+PxeCSydKWPIxgNh9OfstX93VqtpmqagAjuD3dG3Buz4Z1HuZzNZj9+rEAeIrAW0Wj0Cq7DYjzz5N3e3v7uL5FleIH6/p04A/ePHOb4OJfLQSQgE8DOTrUKm7FeWbu9crXcw6lXiUJ1v0YrckNkKESciWDYtqkR58Hltkofytn1xHYqthC4GgQXk4W9Xcg5qYiMgBA6x80c9ruOrbn/RsCUu7sRb4rVbCV+JVY/hJO+X1NoWlYZnsJ5JhBFnTF629H1njO0TcMwbcuyTIqYAD8Fi8LlNnee59+nl2bcPhrbLlR3aZIk6QYrIM9A4BmWnc691e10OljesoZOv9u3tMlPCCwrivAcAeRK2czju+EZtg/FIeo1EtQVkfdcES82ZEWhZfb0UK1ep91u671er9s9Oen0hsaEOhJpTMN153JvijvZtZXAjBK8m1jdq9EgDqIC4jjPQCHrACkKxAjKME2IuKN32j/a7Q4AR3ByeuqIlWXFU3fhfm6WC4nIYmD2CIZTD/Z26ySAvy/CYE8VzgJQWGFsbg0GA6ffw+p/aHeHJjEJxbCiqrIU8ntvo7SejkVnLvZLydXXkHVsrvIUxbOsK4t4VgQDEW++h2E5vR5EHEbtm3d6A5uYqjmBwU3pg+4Vq/nk9cBMEUolVu9LJEZReUQxqqzIDBrVHM/w/vAM24GBe+K+ut4fmn7i/aZjfXl8iqxWzL/fjs3S4FOZhzckL+1gjpgG3njWU/Gy76PZQ6d7MuXeHdgGNTl3lgZUZvSwoCp4mbRiObMUDcwIwdSDh8sSWZckiRZ5xFG420iZGe0oMQmnQcmBPdSb7w5F1+0PTl3ucIL1Oi1S3mOCTEJd0sydjZ38s0hgJoiC+Y2juvSt1ZIaPEG46qTidjpC1MTI/a7DsfesAW/wet8y0ETTibIyvhYpVXazJBDcRjnzeCZu+dSDtzeOpKPm169Nknf3G1ZdFnGxwdbjt5JpkGb1QX2kDAEAdF13LI3wQbgohPGu45Og3QbhoO8yl//LJhiBmX8D88ODwyNx9AbHM4zglRwrwpjOgLP7vY5nDoXv0XeGk4mHZUGEDxLGB3mcqxaSscDlEsu8vNaS6q3Dgy9N9dSA/alPY8PUPXNn4DG0/KLzy/E80Fb5WSwUuESuJ18uN6V6vXlw0JJ54hTeT5dz1dtg7limaZgYw9B8c4GB4FAXuUPdFeKX6B7aXl1ufquT9VazRcOi/z2grrvNpkGsp6DYRqPhvghdwM/NQvrS3mxDsRfL11r4QpfqbgH9PfjNRte7uNMn8S9xEl+VFw/+N7FmstM2FIVhh1aRII2ibKquQApSURmUShVVU0TVIEFFVcpUhgWw6evEtqwr+3qIHceDHKk8RXd9g6pv0LfoOb4QE3MLLHzNv2IV+Lhn+M856T4a+3znyE9GMmpgaONY1R6A/hNK/G/wcHw28IO6TID97o+yNrcfydg+nXtd90ckJTfH5CZ09Pvl/Pr7h3kYnnDaxTYe31P3rP3u4mO8+7PFlaafoHXH51HG7wVPdb8s7UdW13jskO7gZ5Rx3bNxmLkF39rfni2fvdLofK2G+OhERxcH3dxWMN4fWu5gpL9LqTvIJlgXxNY2uZjvtks3N431IzVKPBCBRMfnHkJ8ChAGgAzKFl+ZsNZt1Mpm3zlpRmEQhGEg94HchNx0haA75kC+lg5Dce6XtD59mJHKVKXWWaj6QB75wQBHdPzzhLy6Ah9NxuxEj/NBv3ZcbqmbWd2tRuEooarvmVcj+hCqUuFStL48KTfPvvmuLZWnytJJU/UDDw2s6/S0PrRhcCC94qXYbg5dz7O3tk5LvNA03n+nFGpcwiZVxyVEZn4ua79FxXseHWNembzUbLdLY6/MLdepHxDijWSIcgXQ0dWwBuwoQtFRsT3JvvVuXipHT2ZXmjQKwc2kG3ZmZHBExx9c2FIIRidsB5RtwNbOF0sa4hqvlilmOjpY9v/XHDZi2rFOdKNQdDuWb2toajfHYmv/QznNvbKzXFfV0CO4gtOuPfbVvUguGB1KqMzRwBxftnC+e3mxXgZ6ZanTjNQoHVbdSUwtJuBqnWLrnKnz2F0AZjExBPbWwUYZvmbm1VldpWGA6H0nh86GuEJlDDjs1ytfp68TPGtZ2zXx2T5Vg/0EuncZ0fNngzjGg3Khcswh4aY7W/8O8e7R650fil9TNlaPqApFjmB9z/s3Z+JMJsrUoMhVh3P6gwEGwMHeN0m0dnabiD6SeehY7gqXBvMLR3rMjISZTnOXW3OSWFWm3y9UVRWaeoYuWpjQ3CpvpOxs6Wvtn06LLfLP2itVFu+I7mFbL0G2y2EnmOOZXnZnxZ4hZzpfET0cIboXJkPH6okXzMT/q3RjtS4Ohfa3ytIXcDMqTdDPkMCPArtXhtIT5t1e3jroCkWfXj+KAD0K0kdPIjUxemVIsXnpnplJ1OXxkiRQ7TcLVEU/k2Z6QtXQEFDa+R2Ox37z2GWdC93WzJ3VKdb3tLUFIWWvzpamQiuepRkcdqLftI6bhzVJmKbeNn2Id7Z9h1SnNLCtqwUaeneRUkyOoZ3YWnzcW5REaer55yqmOju5kMSnPnEs5jrASguueNx31/sZ+trWqSRKT9onKkV0T2YBHyUDLUU3YvHofHY3G6CstQ1he6rG6jJNqxxD95LQMzUWjPj1GVt0i1eMOMc+MShare4LUePb/D/azT00qTiK49lrvSDKf4Kg+qvoAQWtB0URuJ72IOiBSdGL2CrosfqnooLqv7i7zlnd2WxuaYrXFNFMQc18DR2a2/SfVHRCjU1a0R9Bf3V+v2tptutd6D0wFO5ld597zu/3O+d8z9YfBHRcqjPsOjWz1GQatOxYsht+2eGxpb1wbyNfR/um4yfa8C4nR5OvpZyCAHRFF0edzlenTv2khL57O1+V66ajULngLgU4XIXRlQQT8F1YFOHfZM8q07rS+YYqV546s4ID515idJ0KSW3g+t+tCqJUp/Ntyn9C/vf5JpM9pk9umsKLzV567imTwOt6n+IFz0fRyl3JTNihhAtPCGrnEV72OcGilSuw13tAdGH2OgUPGTxn8a6RV7pdhuV4jaYTErpFU3gwwZKVC5jaRdfdhrQXGPqfJDoFVjf2yua0/AUjfqjVnfodmxv56FcI1q4vove8xHsd7gdyGwEmI+qnxVVudHI17LBI/HrRqd96agMv6Kv2ADr4G9BxRxZrIFxGKYPp0UwyOSoOG+qDDjndRDIU8QTeAPTjeUHfdogp23qgbkFpPB4k4TClL53xmywWi8k9KA4aiOrL2GAwcP5GLG5VqM6dpYSOl37FvJW/K1YVHG2q4iLjsGDynVGr1ZLwY7Q4xAaqCrkhnE6/CXLWf0h1YMtqeJIi5m1Zh9C7QWzT6VRYduJ20ZsoONxkMWpJMKM/zep3ZdiVdETdUUdS7FNyZTUV6IqyM/ZY43Q+0KEjiYv1UsHIje73JzOZpN+E4Y2DbwiWKA4PmrQkCg6LX/yeI5mtRC8XgXbzocLM27iC6UOrynIJLnsfDgd9vmBYnMRkpgxLjZP2W9B1i+ndu+hgmKq+2AGdtT25a/NqHtD3QTO2HB3LrFjh5jjSwYhgxm1kRzckjRATpmhy1DWaGQ1WR1dW5nMlwRel8Zt4QL80k0GXl94105WbjKAuM4BjLY60bMKLPoeWNLpdPgM2gqNN11WlaN+6mwftbc4lAGfUB8aeK4t63+SmYg1pl+uNj5h4c3dF4fDz6ZFxdyg1CvamNL3zQN3JBfP/QpeD4CZjRCHUJKp1KjYoFp8w27CZzdT/6hGgPFJ/hqXrLjuCrl5EVzFym+o3ukZRB+VNZthqL+RTiUQq/7nPRlP/p7wqusrQy4foBFMFdRmb2g9Z7EuUwWLl5ZXuGVEsoDlSGyaKqwYzbS+k+uMRL1gkHksAPfVfrZoXyjL0WQh36uy5c2cvbL5zflrt8NPX7ofG3Mfhj4zo1P209zlR9IGm6hZP0yiS7SiSWbxJme2piLW9ZG9jBfD85Ieq5Ooy9O2LEOz85hs3lt1+eL+1DtLz7EZAHx6KOoZ74FlQt/ZqGPTO6js8bSukYvFIJB7vz/eZJyb/GvMCeTl7pB/uZdfb/0EvZfHLty9BsOcvXH10+0KL6DKEfx3Q2z4OuY2moZkKpLy0dTPoBKGs4nTK1peKYy7M89k+wR5Gf42hGzpCHeXw/X00xT5PJmdBB519M0a/c7/pautdp+hyHRb7rLNr2lxuLWlxfCyiT2b83VaIW60eT5HHCkDmf9d5P5B7GsYHAvg+z2v8Ye2306waFOCyozeiEYNb15qcUqdT2jpt3sWLc6YJakQfHjSRpAV7XQfoLziLLAjluLXdE/oyAzPhVfy1wpl6Wz4C1wI56bcv7chCP8ZD6NObsOnZSnYFJ/qdR01aJynKnW5uvX79Vm3l3Nwza1zvIN00udBaV/V293LWrHranrC2gztziOV1INThabcm7PRfRFRfHJweyImELQz6l2x2rAF9icBbYkFXc6HDWm+Cekky8PDCtStNF5rn1Yj+yQIVhrtbgQW3HlXXEy50c95rfT3e8iGL0EO53M8OcGbKrP8rMD6/BacPiLTClnGMPj4iko53oAhJ2SnW2Rpu9CskKfyQlTYJSUCv1etD4HSLowc/VqWSc1ZulC1mtX7JOoXSAJAERj58R59xO10ZGJ7Ad6jbRAPI2Q0DElKURTdaYwVaz9aoqTzciv89LEPoiHNuK6BrnRInKbxy/c4sQW3o9xyo9hrC6EzmzIFu7ouAPyVaUjLW0BAaA6QfryGOC+Zy9M9xK+C2QHRqR8ZCDYGxES146wdC9+YBnWuAspTSEJ3QmQT0xYhzNaCDIc/fb56NAGpCj0KjKfpJ9+eNawiq+vae97Z3ZLXo8d+z3z4ISWcu4IGIt5eviZQX1kJWhP9KiXREKhHCN+cA3uQTLOiyym4FJLI4uVI/0x/evlDA7PAMueTBjUVTa0W/6QZ0x7Cu7IHVvf6LuSuNcSmKwsa+RphE/CIhIbaQ2Il9N7HFFhFL7BL7EuIHEYklaNVT9cxUjdKO1CgTxnSSVmnVWDJK8QcTW5CxjiW2P75z33t9fW29p+p1fL9IDL53zj33nHPP/e6Fe5f2X61yhJeGS+F59P/49O7i/pJ7Cuo3S2gtlGaHZ+LbZGeDOOEJ2+BuIiwkz+dsXGL5YoKEUd5JSmRRcCzDGmfUh21etKR2mtTnrveDesQYpc5plS0XbpZcvPqq9MnXJzMEQkSdkpVY6rcoDMzMHnbn/Z3wPgkOgfqt5NTB0pqkXs+17mXUayGNXbc6e/hw4Ts6Vq9rkTZ1N/oJd9GGlqhr9eHLbpXsJ+o/ELkI5PBEXWH124x6afjdxaszo9Sz4fBq1KHwlNCg4g/b0KA8SUVr7QUbhq9cs2zNKuZqG9Jd661E6s4odc3TF1gda31Y1eOqUoHRMGzYtNbjrX7107Dw6ys/lkaNPuP1fjWHpxmDhHNmWD3fepAf0Tqr9oI1w4dvWNBgwbLtW7du3b4sXWWHlonU0QBXp44QdvH10lJpAZeyTe7Sy/MK6udoQwvTWi+VqJcKiV1J8jAnzi3JzMUEgyljnBk5oP6SNcOzV69rWgMpLEO6aXyLeSL1Y0cUDXAVnHlzAxaFtwvIfvW1TsK+fuZeCSV6VQ6KcBLCX+tRgL9Bm5v2GYwNshY8QD0BlEtz124Ynr1qmSJ3Tbdy2yisdaJO4yTyVMXvGxBYyNi5wsNKgRmvXh9gpoQXxyZ8VKmfhtnlGDcM2R8rYD6AutZYjdmW57qeU4ye92WX63Lg2vJtm7OzVy5a8E8bVBt9LMI7SXRJ9HqNXBabNlUv7+98qqp6/PrKAZaigU9sSlOGuo18I+yIMqdgCJQ8U+3VkLCBGcQPHw5Fior8nvvenBzv/eBO7GqrFi34pwPiTTeWs30do2MYKGFur6EmAV5wZ9j06rv376/Ah8mJXyr58Oef4Y/g+9ypWkrOMSxcJTI/dztZxa6U6CFtMoOBWtmOQrff5/O7kWsPX7UMzP8lGm70FFI2dxRnbnYakyWoF678qbLbJXL/hS1fxDglWOVGZevrx69evXp85x2SXcKNh0LRqg0TlZQCHNjOV69r9K/78GMrQN1/10jUabRAPNbXSONvXortub08jxgXV6+/RDAk7vWuXrly5Wo9MBfCuxQOtRHI8bgdjHnRqkWbFvxzmaKGfXe5qXID9SN2i3AIo31z+1TZw1s3LpUA6LXe+3B+z8nE5h1FhHhculmWwgyK69F9j8/nKw/u2I2s9Z+jVoct5TC77wHCnPO4YHXtM0eeP0ON5lu3bt5DY+4Un7ShgTJHARRtaE/xqQwXUXQPuNqN6qDHBZjGPSfcd1OXxslxBWx31w50xAxmvXChrOzCBfj6yd9sgi+R8sag5PYzeHsq4BkgRdejhg7I6tE9J4i2ZOQBh92N45T6CRr8Cao9vJu0Ks4BtDJuvjmf2tlNrnilcsTA5jV0AIbH2t/1O3AgeoSLm2RJG/yp82Uv77F2/S0sjPNn+BTvAAohhx/RUZ+x8Pqt5z+NFDmKIkc5MZEyFzg5NZUskkTFzXaYRNstsCzKPrx586EMC0PhIeqyPblsihDDXGw/0WtQNGvc1KNPMf3ge2EXDF5Q1/viwTESUE1GDtNySDoIJKFk+NMFix+UoD1HdgJRls7gWDWh23gw0BuyJN5gYaHf6yRVYO5p0O0OejkziQQlCbqHICcrwGb980tBJ0lgmwAFCO3pQVQRNDYrUp+t23VmXAUwWl74Cgt9d58eMxc89RRRinMEX8FGIviJKTYngdTiTZJt4/UjXSaFC+edsNogJQphfc3vdYhm9wxkdRs5fJshuukO4gKI0fLghR9jTh7v0QfY5UH9BWcW6ielyrE8vK0sqg0sGksA78uh4uuB3FihOQlMhFl1Nyfqh0z4t6BcQCeN+t19gTKJ0WLBmSPm/1ArFLFRuKeQiibkkzSW6uQD8TMFHuU8CkBIXDR5qNLj8/s9j1ySsCIOtZTfS3VSmKMmGTwMi0PfG09Z9Xs1M1pw3sqqBSFp9t19UCDepY81/GFboqIKuW/I66GpwOsBF3i7Ao/us7+qqCIkyU3FAbuHGnXFsKqO99xgdmFg8sGLYFG0unbj5DXRSAeVw5xSE5PPcRfSyGh5xXUXBkMr/OIYZaRYHAFNokSiquAhz/HofLsxa8poSBaAvDdSLpIv9NPJqwj57s/h5NT3VIo/5S73RDzlKLeE396/Lg6KxP8U8mReTcZCFt/D7Q9d5ZgadcAdEMBuf+ph3DHXiZ0uXkkAo+BYtMnG1isYWQJmhqMoqgwIVzfV7yonyx1iLviN0VWNqfaUqcctRN15DJscY+CvOBoblKWbKImqWXRgwXsRGxPhLjaJVleZg1SH/pJ7bbtAqoImw5HPMOpUzsjU5fFRKVgrVTX4R9gRJTgkwzvKQ7w4HsQpVUiwSP6UershOFzWEySxZ2E3eh9EyIAOOczJ5Yxo9xP55oQ7x6FKt0i7sJBNixN99/2AdCk4me6ONjIj09GqbxN2AcZp91LPJhihLF4BqXGDDD7Pmr9XyubEDxIKOliYC37/Qvj+HUE+WOyKjgxwsskFEU0NGFiGlBFxltqtx5PHo0FVF77rf2Es+H1oMuRSVmq1Wa0npJyUz62kZND3/dvZ54Sz374E/V4aCFZ6itmcTy9E/b4iNEj5Mr2nI05E640po9sbibvTiUBX/jTO5HEqyoApF5ArN0Og0u0HcRnffgbimuvgbcPH+v0yN0FP1yBJ1gjBZda8DAgxkVIHC/JG790XRhQvMpTLnYEVoQqLhSq/kMkl5s8/v5WNy2SCcXTGpILVbv6I60eoXAxodWROfosJEqFFR3PSSbirhCdY9vNHEJeYfwTzVHEQRXC0VIDV6ZKXruFdDvJNLOyqHw5h6CaMllhOIve3H6PUP74FiVSRi9Ug/MIqjOW3m6jDrcakzz+0Pypc5i6AoqgU5jhOqYSnzh2Gfw6v//hZhbl2G5Jmaugr8yMmZ+bxq5rjOjczCi5f4HRK1HGjnfvjHdn0FuQ/fvxM6zwNoD+Dmp4EhPUP73LLggBvPwK+knAFhg40XV7uxhx++/bt4TRvvZPiGtxLf5092ewkGC24PMhK1C0Qcohzee0zA2162gkN339Iq4xJ6NYcMIG5vEUO8CTQY4+lTpLpmUH/UT0z+BRI09ZTi8XlLtFFuHdy8YmNTjDEbvr8iIGdamQQbUl3juXyEne88lTAxSnhGVT+8y60qAyBUMiVOnGF4BU/eEynjGrjN4aYLJgruHNcfGKjkooGHhXn8pe9kfuhlNe7Kc8mPwtIW3pmpfHptZv2FhbmiXsyqErKmkIRj/dRpa+8IpAqdexoMYos0CnI+EumeOOoSV2F3VVy+QQYQkF30BN0e1LXMiDVAumBHfRm0IvMNLKaigmtBRkd9zuX/y13V3GFx+OpKEa9miIOmWV3Qleqky7RXfs9M3G9Y56KxTlloAPy1Vw+x5tDGgUpU7dJLQwcOvTB0yfVAbzfB5cHLOBO+nPRMRPtHU46gkodePVLsnkal9XTDvMkX8HsjreeoLIp7vMyONWjo7/L5aRHEU+2GdWna/W9YNmKfF4I9HZUsCSYn6goYPoXOUyig/QH8xrVB8S66aRlIEQ7O9Or0QzzqcN0OE8hxy5FOF3XuXasw+u0xy0CdwCLPqn0ZTpA9mbNjwsaJyfNHojD9OpFg65d5mPBi+Rjcrsj0b0uTc14HEgpb1yg1zlp2uTqf6w1q2Hvft0kpz8uWZ2jakZqXpjTeynAZKVlIzs87k4vHDLgv3ifOKtTv+nj6wpeD+5sb6cJ4qMgzyUcvQOp5+zWvOhMBp66vryiS8f6Nf4PNOzYfX4TVHJCqIexmbQwfQjiLj9N/nfU0aBGa5qa+sKBzpwVQ1r9Py+xN+zdevoggbsFezzEJ0mOTxYfBXd2qPB3WzlIC+PvGDDKN19b3K/3/8NceIG9c/smxy0W0evRsbQfx1fgYvs2GAgzpW58uDn5OR3gAQsXD63+AKdAVuO2Hbt3ayZZ3u5k2puwv2Kfy6eJsFyQT4k4o41JPcZ89ID/4ilqJRr0bt13+qDi4wh4LMFxOmF8RVrLgbzNeiIv7xBOlpDBq0nVoGdJrPFsI3Nz4dPNWdy92t9iTo6aLQd06Ty/PSIeHN9CEZ661Qm1LH0AmP8Q0Scop0LZ70wAjt+YuaNNoDkLF1d/HvOLu/P5SRsM47iF2rX8UhpooQhIkBQUsFiVQGC9EoNy0ZgQDrIdF68my7KLx124bHmTJVuIkujJY/8I/qp93xeYynAbO7X7XDBgE77v832e9+3Tt/RF7b5sNW32dGFieyQ7PH9Dgz8Pu55KLcCG4CvbREyZSJ7GGi6fCmenxJjT1rwrzoWTdtOHR23DsoewPuo9rA/94H7igScJMDEAvf6OJEAaALx8Q4S/zDyOueL7/f0NsDq1U0dV9sUlz7//ulV8Gw4HZ7M9mYwAhoDpf8q8H76jo48TQArTjcf53w6D4RPzjSMWcH+C49eqx8dps9WzZut7QmD/CbfgjiUCjAAeh4C+3rOHud+AO/zfkNHtmemq5AblU6RUszDp1yP6zP6DKWwUbil34OYZaPZgTUhVjyjDoH7SPirsOjnJf4XjAvzOO5sMBMPQwwID6qeQF5l9KoBg2Gj1d9cCLor44492DclIPzxO1+u1Usfo2kMaTKpvIfhg6g5hbBmdUq1eT5/6HV/dFrFTOyEkXKzSUfDvHpjn7bOzt291HQUQM8BTkAF2MBgO6zoWBhiDsdEy+/sp0anz+F/cLoMyZxSy9G9PwOfLZrPV7YMC6p9hdXEJ4yeCPe5aRq/TMl8XTEMgw24pu+bzetxn9Fn7qh4eEeH8WY3iJH9qdxsJcEg5ohxOgLmb27sp/3YNR9klv1tlT59OHxwJ4cPAS0Pj4UVFFCXey/2EeeUEXin2nbla/+snXAqjYC/9m/BN5M5RNU/IwGpVV9yLr4asDbeaS+9c6BcJ6faOV9yLr2Yx6csmLb/fJijxrpZOa3XQqC8rXfoPpNPd80K3tOyF4LXCGQzfcXOuY/c8fbKpsew+n2pHJ8Qwd1bcCyce0LvDwsWD2FJ+T9NznnbTzZPbCodpShiQYGuRDI6xwCunbDVQE928pMFNgTslS0Dcz/el+V4WL4lYz0hez7x835EujDAvuHX1PsNzXNLtAdHN0+dDoiTUci6XK6taYlOOKRLP0dHAso7eazAc2EbBYd32f9pl1rEIEfT6M/9KWiMeicTj0WgyWcmp2qaCGPOKLHq826ZOl3I7HOfxelx7+sLgm53ucBQ8b/rmpEN4slGpUOUJaMabMVmU5MKJMAweVQMeUU7gfa/LxCNgyGG8eiVF/mBaNhEMM/t0PGJambkdUMOLPEejHhOVDy2B2FYdA5GoRKMVlX0u8i5JfM4rxvB1vd41f2q/f3HRsmy059rZucFBZgMPTA1YAUDh81/0BDK+rAcCqcp1JhOJxkEyp8mS873P8cqmmquUE6J0XHrXLhYNwxqjJ2FD+h+gNT91cYmod8/e4dDLq4/vK9F8ZiOzlY83VNnZfSoOTs4lUcGiqhwrWGPaeWIIVin70hnr7DRdUmIKkw7oYaPuVV+N5jdCq6uroUwkqcUc3I/mRC0Z2cogSpGkmihcdgdEsBlW643v10YFgOd5njUrPMpmIiY3rrpkAHDc2ELU43tb66ufP6++Cm3ko6pTNlMsUK7GM+uh9Y1Mfi/eKL8xS4/Np+bcb/hCt6goiHNsM6FpqPGKopXLmpZ8f3XZ65yjbVVqffx0HY/sIezQ/vCwGtrYyykOrXeeRHSdxWdrLxKn1Rm1LhBAOx48XbMhwlS3LMuQXa4kUcuijVw5iVmeJsv1+4a6KctaI7++vpHPbzHpjFBEdWjCS+VI6AHK4XdoKdPZmls0QpjF5B/smc2KwjAUhammxG5CkWZStYEWEuiqkKz7mD6HzzjnpA7DYAd010I+Qatdnd5z/yJaFt5YGOLoUiXDB3Kl61wzo+1dvYbTJRzU1T/SH3KwG7V85aO6y3qgcjSkvhVr+8mhNQH4afLBXkZKU1I9kVDrGq31JQ7qccc33v2RXm5W+tFc6pLS4XcbkL5iZRItTr5xyAgQoVtJWVJZucALqVQNxcvPvM2LhIrTRg1ftGGspVQ1Xas9DC9epR/PuqO0BAO6xq/cEi/CQqdcaLfa3g7nOXYQzxwdte85n75IvzWyfHL/gBLdbe43WuDTMmpsHBBMiZS1t7XlQ1wb9alsZkE32uum/4Erqt7MunGo1EODHpV2k6oSgtM6hvS2N9bJt6U/CD3kGrv1SZZDWnU2gf250XMIno2K+1mPHm48H0tdgneDzcrhog63XZxXpYHl3ENomK21OnHhXEYzIBveCzfTux4QbtRLbLV7UP67ulL+lPRTOTs4dC9uf6zBKAPF5talwcjO3vQbXlr+pUB6i1NLp09hTnMb57UaKCD/sggesPy4NBh4bGoCJx47FP6k4GZWnb7axQOTn622zwyI4xj5HgFn3zAZY7jM8GhmVx5/4ylUokIZILTC5D3ETsDwaPZL7O0k7gOKxGHh+JfDnr2dyWQymUwmk8lkMplMJvO9UTAKRsEoGAWjYBTAAQBrbpQGldmY2wAAAABJRU5ErkJggg==" alt="">
+                <p>8200428153</p>
+            </div>
+              <p><a href="order.html"><i class="fa-solid fa-basket-shopping-simple"></i> My Orders</a></p>
+                <p><a href="credits.html"><i class="fa-solid fa-wallet"></i> My Credits</a></p>
+                <p><a href="referel.html"><i class="fa-solid fa-user-group"></i> Invite a Friend</a></p>
+                <p><a href="help.html"><i class="fa-solid fa-person-circle-question"></i> Help & Support</a></p>
+                <p><a href="#"><i class="fa-solid fa-arrow-down-to-square"></i> Logout</a></p>
+
+        </div>
+        <div id = "rightbar">
+            <h1>Your Orders</h1>
+            <div id = "orders">
+                <p>Order No. :9016886</p>
+                <p>Items :</p>
+                <p>1 x Description</p>
+                <p>Order Date : </p>
+                <p>Total Amount</p>
+                <div>
+                    <p>Track Order</p>
+                    <p>get Supports</p>
+                    <p>View Details</p>
+                </div>
+            </div>
+        </div>
+
+   </div>
+
+    
+      <!-- -------------------------------------------------------FOOTER---------------------------------------------------------------- -->
+    
+      <div id = "foooter-cloud"><img src = "https://fraazo.com/static/footerDesign-26fcca451f726500fd06e7fc02d09cb4.svg"/></div>
+
+      <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+  
+      <div id = "footer">
+          <div id = "footer_content">
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <div id = "footer1">
+                    <a href="index.html"><img src="Images/download.png" /></a>
+                      <p>Order online vegetables & fruits
+                          directly from the farm. Fraazo is
+                          online platform that allows customer
+                          to get farm fresh produce directly
+                          from farmers.</p>
+                  </div>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>USEFUL LINKS</b></p>
+                  <p>Privacy & Policy</p>
+                  <p>FAQ</p>
+                  <p>Terms & Condition</p>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>Cities We Serve</b></p>
+                  <p>Mumbai</p>
+                  <p>Hyderabad</p>
+                  <p>Delhi</p>
+                  <p>Banglore</p>
+                  <p>Pune</p>
+                  <p>Chennai</p>
+                  <p>Hyderabad</p>
+                  <p>Noida</p>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+              <div>
+                  <p><b>Connect With Us</b></p>
+                  <p>Support@fraazo.com</p><br>
+                  <p>+91 9152291522</p><br>
+                  <p>102, We Work Vijay Diamond, A3 & B2,
+                      Cross Road B, MIDC, Andheri (East),
+                      Mumbai City MH 400093.</p>
+                      <br>
+                  <p><b>Download The App</b></p>
+                  <br>
+                  <div>
+                      <img src = "Images/Play1.png"/>
+                      <img src = "Images/Playstore.png"/>
+                  </div>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+          </div>
+  
+          <!-- ------------------------------------------------------------------------------------------------------------------ -->
+  
+          <h1 style = "color: white;">Fresh Fruits & Vegetables Grocery Shopping Online</h1><br>
+          <p>
+              The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits
+              and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep.
+              Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a
+              click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, 
+              Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its 
+              hassle-free home delivery options. You can choose the delivery slot as per your choice and schedule
+              your order accordingly. Or you can simply opt for the option of 90 mins Express Delivery and get your
+              order delivered in not more than 90 mins. The farm fresh fruits and vegetables on Fraazo are available
+              at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can 
+              save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets
+              or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of 
+              freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies 
+              from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from
+              farm to table in less than 12 hours.With our Safe & Hygienic packaging and minimal multiple handling, 
+              we ensure you get the best quality fresh produce.
+          </p>
+          <br>
+          <p>The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. 
+          The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, 
+          starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli,
+          lettuce etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo,
+          Fresh Cut-Veg Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on 
+          vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, 
+          Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo
+          accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, 
+          JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing 
+          items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/  replace your
+          product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat 
+          Support or Call on 9152291522.</p>
+          <br>
+          <hr>
+          <h3>© Copyrights 2021 - 2022. Fraazo. All Rights Reserved.</h3>
+      </div>
+  
+      <!-- ------------------------------------------------------------------------------------------------------------------ -->
+  </body>
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+  </html>
+  <script src = "Js/cartAdd.js"></script>
+
+  <script>
+
+
+  </script>
