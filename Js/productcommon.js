@@ -1,3 +1,6 @@
+var totalitemincarts = localStorage.getItem("totalitemincart")||0;
+document.getElementById("carttop").innerText = totalitemincarts;
+
 function display(data) {
     data.forEach(function (el) {
         var box = document.createElement("div");

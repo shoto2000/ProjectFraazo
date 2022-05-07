@@ -31,7 +31,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             
         </div>
-        <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart</a></div>
+        <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart<span id="carttop"></span></a></div>
         <div><i class="fa-solid fa-wallet"></i>Credits</div>
         <div><i class="fa-solid fa-user"></i><span id="user">Login</span></div>
     </div>
@@ -349,6 +349,8 @@
 <script src="js/cartAdd.js"></script>
 
 <script>
+    var totalitemincarts = localStorage.getItem("totalitemincart")||0;
+    document.getElementById("carttop").innerText = totalitemincarts;
     var swiper = new Swiper('.swiper', {
         autoplay: {
             delay: 2000,
