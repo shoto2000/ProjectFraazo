@@ -34,7 +34,7 @@
         </div>
         <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart</a></div>
         <div><i class="fa-solid fa-wallet"></i>Credits</div>
-        <div><i class="fa-solid fa-user"></i><span id="user">Login</span></div>
+        <div><i class="fa-solid fa-user"></i><div id="user">Login</div></div>
     </div>
     <!-- -------------------------------------------------------Product Data---------------------------------------------------------------- -->
 
@@ -234,3 +234,13 @@ function openCity(evt, cityName) {
     document.querySelector("#pro_photo").append(photo);
 
   </script>
+
+  <!-- ---------- Login JS ------------- -->
+<script>
+    var clintInformation = JSON.parse(localStorage.getItem("clintInfo")) ;
+    console.log(clintInformation)  
+    if(clintInformation != null) {
+        document.querySelector("#user").innerText = clintInformation.firstName ;
+    }
+</script>
+<!-- ---------- Login End JS ------------- -->

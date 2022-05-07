@@ -246,4 +246,8 @@
     #user{
         cursor: pointer;
         /* font-size: 13px; */
+        display: inline;
+    }
+    #user:hover{
+        color: black;
     }
