@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link rel="stylesheet" href="Css/common.css">
+    <link rel="stylesheet" href="Css/common01.css" />
+    <link rel="stylesheet" href="Css/checkout.css" />
+    <title>Checkout Home page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id = "navbar">
+      <div id = "logo">
+          <a href="index.html"><img src="Images/download.png" /></a>
+      </div>
+      <div id = "area">
+          <i class="fa-solid fa-location-dot"></i>
+          <select name="" id="city">
+              <option value="">Home</option>
+              <option value="">Ahmedabad</option>
+              <option value="">Mumbai</option>
+              <option value="">Banglore</option>
+          </select>
+      </div>
+      <div id = "search">
+          <input type="text" placeholder = "find fresh-vegetables,fruits and dairy...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          
+      </div>
+      <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart<span id="carttop"></span></a></div>
+      <div><i class="fa-solid fa-wallet"></i>Credits</div>
+      <div><i class="fa-solid fa-user"></i><div id="user">Login</div></div>
+  </div>
+    <!-- header end-->
+
+    <!--/////////////////////////////Master Section//////////////////////-->
+    <!-- payment stage animation-->
+    <div id="topDisplay">
+      <!--4 standard layout master div-->
+      <div class="container">
+        <div class="progress-container">
+          <div class="progress"></div>
+          <div class="circle">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="circle"><i class="fa-solid fa-calendar-day"></i></div>
+          <div class="circle"><i class="fa-solid fa-wallet"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- payment animation close-->
+    <!-- Card item display satrt-->
+    <div id="masterCard">
+      <div class="subMaster">
+        <!--left Display-->
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- All the matches gets appended here  -->
+          </tbody>
+        </table>
+      </div>
+      <div class="subMaster1">
+        <!--Right Display-->
+        <!--Referal card-->
+        <div id="refCard">
+          <i class="fa-solid fa-badge-percent"></i>
+          &nbsp; Apply Coupon / Referral
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <!--referal card close-->
+        <!--billing card-->
+        <div><h2>Bill Details</h2></div>
+        <!--Bill items-->
+        <div id="billContainer">
+          <!--here we have to calculate the sum of all items, just have to creat multiple div for each items-->
+          <table id="table01">
+            <thead id="thead01">
+              <tr id="tr01">
+                <th id="th01">Prices</th>
+                <th id="th01">item</th>
+                <th id="th01">New Price</th>
+                <th id="th01">Saving</th>
+                <th id="th01">Delivery Charge</th>
+              </tr>
+            </thead>
+            <tbody class="tbody01">
+              <!-- All the matches gets appended here  -->
+            </tbody>
+          </table>
+        </div>
+        <a href="./checkout2.html">
+          <div id="displayTotal">
+            <div class="ttl">TOTAL</div>
+            <div>SELECT ADDRESS</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--footer-->
+
+    <div id="foooter-cloud">
+      <img
+        src="https://fraazo.com/static/footerDesign-26fcca451f726500fd06e7fc02d09cb4.svg"
+      />
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="footer">
+      <div id="footer_content">
+        <!-- ---------------------------------------------------------------- -->
+        <div>
+          <div id="footer1">
+            <a href="index.html"></a>
+            <img src="Images/download.png" style="background: #0d5241" />
+            <p>
+              Order online vegetables & fruits<br />
+              directly from the farms. Fraazo is <br />
+              online platform that allow customer<br />
+              to get farm fresh produce directly <br />
+              from framers.
+            </p>
+          </div>
+        </div>
+        <!-- ---------------------------------------------------------------- -->
+        <div>
+          <p style="color: white"><b>USEFUL LINKS</b></p>
+          <p>Privacy & Policy</p>
+          <p>FAQ</p>
+          <p>Terms & Condition</p>
+        </div>
+        <!-- ---------------------------------------------------------------- -->
+        <div>
+          <p style="color: white"><b>Cities We Serve</b></p>
+          <p>Mumbai</p>
+          <p>Hyderabad</p>
+          <p>Delhi</p>
+          <p>Banglore</p>
+          <p>Pune</p>
+          <p>Chennai</p>
+          <p>Hyderabad</p>
+          <p>Noida</p>
+        </div>
+        <!-- ---------------------------------------------------------------- -->
+        <div>
+          <p style="color: white"><b>Connect With Us</b></p>
+          <p>Support@fraazo.com</p>
+          <br />
+          <p>+91 9152291522</p>
+          <br />
+          <p>
+            102, We Work Vijay Diamond, A3 & B2, <br />
+            Cross Road B, MIDC, Andheri(East),<br />
+            Mumbai City MH 400093.
+          </p>
+          <br />
+          <p><b>Download The App</b></p>
+          <br />
+          <div style="background: #0d5241">
+            <img src="Images/Play1.png" />
+            <img src="Images/Playstore.png" />
+          </div>
+        </div>
+        <!-- ---------------------------------------------------------------- -->
+      </div>
+
+      <hr />
+      <h4 style="background-color: #0d5241; color: white">
+        © Copyrights 2021 - 2022. Fraazo. All Rights Reserved.
+      </h4>
+    </div>
+  </body>
+</html>
+
+<script src="js/productcommon.js"></script>
+<script>
+    var mangoesData = JSON.parse(localStorage.getItem("mangoesArr"));
+    
+
+    display(mangoesData);
+</script>
+<script src="js/cartAdd.js"></script>
+  
+<!-- ---------- Login JS ------------- -->
+<script>
+    var clintInformation = JSON.parse(localStorage.getItem("clintInfo")) ;
+    console.log(clintInformation)  
+    if(clintInformation != null) {
+        document.querySelector("#user").innerText = clintInformation.firstName ;
+    }
+</script>
+<script>
+  var arr = JSON.parse(localStorage.getItem("cartadd"));
+  console.log(arr);
+  displayData(arr);
+
+  function displayData(data) {
+    data.forEach(function (elem) {
+      var tr = document.createElement("tr");
+
+      var td1 = document.createElement("img");
+      td1.setAttribute("src", elem.img);
+
+      var td2 = document.createElement("td");
+      td2.innerText = elem.name;
+      var td3 = document.createElement("td");
+      td3.innerText = elem.qty;
+      var td4 = document.createElement("td");
+      td4.innerText = elem.price;
+
+      tr.append(td1, td2, td3, td4);
+      document.querySelector("tbody").append(tr);
+    });
+  }
+</script>
+<!-- for billing -->
+<script>
+  var tr = document.createElement("tr");
+  var masterDetail = JSON.parse(localStorage.getItem("cartPrice"));
+  var billAmount = JSON.parse(localStorage.getItem("netPricing"));
+  // materBill[4] = 30;
+  var masterBill = masterDetail.concat(billAmount);
+  console.log(masterBill[4]);
+  var td01 = document.createElement("td");
+  td01.innerText = masterBill[0];
+  var td02 = document.createElement("td");
+  td02.innerText = masterBill[1];
+  var td03 = document.createElement("td");
+  td03.innerText = masterBill[2];
+  var td04 = document.createElement("td");
+  td04.innerText = masterBill[3];
+  var td05 = document.createElement("td");
+  td05.innerText = masterBill[4];
+
+  console.log(td01, td02, td03, td04);
+
+  tr.append(td01, td02, td03, td04, td05);
+  document.querySelector(".tbody01").append(tr);
+  var sum = Number(td03.innerText) + 30;
+
+  var div = document.createElement("spam");
+
+  var nextPay = document.createElement("spam");
+  nextPay.innerText = Number(td03.innerText) + 30;
+  console.log(nextPay);
+  div.append(nextPay);
+  document.querySelector(".ttl").append(div);
+</script>
