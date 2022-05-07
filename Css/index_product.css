@@ -1,0 +1,518 @@
+                        /* All the Index Page Slider Product Styling has been Conducted Here */
+
+ 
+        /* FOR THE FRUITES, VEGETABLES,KITCHEN STAPLES AND OTHER APPEND PARTS */
+
+
+ /* <!-- ------------------------------------COMMON HR lines FOR PRODUCTS------------------------------------------- --> */
+
+        hr{
+            width: 90%;
+        }
+
+        h1{
+            margin-left: 5%;
+            margin-bottom: 0px;
+        }
+
+
+
+        /* -------------------These are the styling of Slider Buttons of Index Product pages ------------------*/
+
+        .left_right{
+            margin: auto;
+            width: 92%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: 4%;
+            margin-top: 11%;
+        }
+        .left_right>div>button{
+            background-color: white;
+            border: 1px solid rgb(206, 194, 194);
+            color: grey;
+            font-size: larger;
+            border-radius: 4px;
+            padding: 0px 8px 4px 8px;
+        }
+       
+        /* -------------------------------   ---Products Container Common Styling----------------------------------------------------------- */
+        
+        #best-deals,#mangoes,#vegetables,#fruites,#herbs,#dryfruites,#kitchen{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+        }
+        
+        /* -------------------------------------------------------For Best-Deals------------------------------------------------------------- */
+        #best-deals::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #best-deals>div{
+            min-width: 19%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+
+        #best-deals>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #best-deals>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #best-deals > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #best-deals > div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            
+            font-size: 14px;
+        }
+    
+        #best-deals > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #best-deals > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #best-deals > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #best-deals > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #best-deals > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #best-deals > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+
+        /* -------------------------------------------------------For mangoes------------------------------------------------------------- */
+        #mangoes::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        #mangoes>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #mangoes>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #mangoes>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #mangoes > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #mangoes > div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #mangoes > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #mangoes > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #mangoes > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #mangoes > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #mangoes > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #mangoes > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+
+         /* -------------------------------------------------------For Fruites---------------------------------------------------------------- */
+         #fruites::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #fruites>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+         #fruites>div{
+            border: 1px solid rgb(236, 235, 235);
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            border-radius: 10px;
+        }
+        #fruites>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #fruites>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #fruites > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #fruites > div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #fruites > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #fruites > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #fruites > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #fruites > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #fruites > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #fruites > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+        /* -------------------------------------------------------For Vegetables---------------------------------------------------------------- */
+
+        #vegetables::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #vegetables>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #vegetables>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #vegetables>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #vegetables > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #vegetables> div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #vegetables > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #vegetables > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #vegetables > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #vegetables > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #vegetables > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #vegetables > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+
+          /* -------------------------------------------------------For Herbs---------------------------------------------------------------- */
+
+        #herbs::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #herbs>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #herbs>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #herbs>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #herbs > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #herbs> div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #herbs > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #herbs > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #herbs > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #herbs > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #herbs > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #herbs > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+           /* -------------------------------------------------------For Dry Fruites---------------------------------------------------------------- */
+
+        #dryfruites::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #dryfruites>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #dryfruites>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #dryfruites>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #dryfruites > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #dryfruites> div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #dryfruites > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #dryfruites > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #dryfruites > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #dryfruites > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #dryfruites > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #dryfruites > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }
+
+         /* -------------------------------------------------------For Kitchen Staples---------------------------------------------------------------- */
+
+         #kitchen::-webkit-scrollbar {
+            visibility: hidden;
+        }
+        
+        #kitchen>div{
+            min-width: 17.5%;
+            margin-right: 20px;
+            border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        #kitchen>div>img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(245, 243, 243);
+        }
+        #kitchen>div>div{
+            margin: auto;
+            width: 95%;
+        }
+        #kitchen > div > div > p:nth-child(1){
+            min-height: 40px;
+        }
+        
+        #kitchen> div > div > p:nth-child(2){
+            margin-bottom: -25px;
+            font-size: 14px;
+        }
+    
+        #kitchen > div > div > div{
+            display: flex;
+            margin-bottom: -15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #kitchen > div > div > div > h5{
+            min-width: 15%;
+            font-size: 16px;
+        }
+    
+        #kitchen > div > div > div > h5:first-child{
+            color: black;
+        }
+        
+        #kitchen > div > div > div > h5:nth-child(2){
+            text-decoration: line-through
+        }
+    
+        #kitchen > div > div > div > button{
+            width: 25%;
+            height: 30px;
+            border: 1.5px solid #4FBB90;
+            background-color: transparent;
+            color: #4FBB90;
+            border-radius: 15px;
+        }
+    
+        #kitchen > div > div > div > button:hover{
+            color: white;
+            background-color: #4FBB90;
+            cursor: pointer;
+        }

@@ -17,7 +17,13 @@ h1 {
     line-height: 30px;
 }
 
+#price-checkout>p:first-child{
+    color: teal;
+}
 
+#price-checkout>p>I{
+    color: red;
+}
 
 #container {
     width: 78%;
