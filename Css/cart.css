@@ -12,6 +12,7 @@ h1 {
 }
 
 #price-checkout{
+    
     width: 20%;
     line-height: 30px;
 }
@@ -140,4 +141,49 @@ h1 {
     color: white;
     background-color: red;
     cursor: pointer;
+}
+#details{
+    width: auto;
+    display: block;
+    /* align-items: right; */
+    /* align-content: center; */
+    /* padding-left: 60px; */
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+#details>p{
+    color: black;
+    font-size: 15px;
+}
+#couponBtn{
+    border: none;
+    background-color:white;
+    color: teal;
+    /* border: 5px; */
+    /* font-size: 15px; */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5px 8px;
+    /* border: 1px solid #3470e4; */
+    border-radius: 5px;
+}
+#couponBtn:hover{
+    color: white;
+    background-color:teal ;
+}
+#Checkout{
+    margin-top: 30px;
+    border: none;
+    color: teal;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px 14px;
+}
+#Checkout:hover{
+    color: white;
+    background-color: teal;
 }

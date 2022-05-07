@@ -1,3 +1,5 @@
+var totalitemincarts = localStorage.getItem("totalitemincart")||0;
+document.getElementById("carttop").innerText = totalitemincarts;
 var cartArr = JSON.parse(localStorage.getItem("cartadd"));
   var container = document.querySelector("#container");
   function appendData(data) {
@@ -102,12 +104,16 @@ var cartArr = JSON.parse(localStorage.getItem("cartadd"));
       totalPrice.innerText = "Total Price: " + discTotal;
     }
   };
-
+  var totalitemincarts = localStorage.getItem("totalitemincart")||0;
+  
   function removeFn(data) {
+    totalitemincarts--;
     cartArr = cartArr.filter(function (elem) {
       return elem.name !== data.name;
     });
     localStorage.setItem("cartadd", JSON.stringify(cartArr));
+localStorage.setItem("totalitemincart",totalitemincarts);
+document.getElementById("carttop").innerText = totalitemincarts;
     appendData(cartArr);
     totalPriceFn();
   }
