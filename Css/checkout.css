@@ -246,13 +246,16 @@ p > b {
   }
 }
 /* ///////////////////////// */
-@media all and (min-width: 400px) and (max-width: 750px) {
+@media all and (max-width: 750px) {
   body {
     /* background-color: greenyellow; */
   }
   #masterCard {
     display: block;
     margin-bottom: 100px;
+  }
+  .subMaster{
+    width: 90%;
   }
   .subMaster1 {
     margin: auto;

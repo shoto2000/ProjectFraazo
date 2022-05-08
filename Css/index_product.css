@@ -56,9 +56,9 @@
         #best-deals>div{
             min-width: 19%;
             margin-right: 20px;
-            /* border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-            border-radius: 10px;
+            border: 1px solid rgb(237, 228, 228);
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px; */
         }
 
         #best-deals>div:hover{
