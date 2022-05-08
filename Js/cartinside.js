@@ -13,8 +13,8 @@ function appendData(data) {
     var name = document.createElement("p");
     name.innerText = elem.name;
 
-    var quantity = document.createElement('p')
-    quantity.innerText = elem.quantity
+    var quantity = document.createElement("p");
+    quantity.innerText = elem.quantity;
 
     var price = document.createElement("h5");
     price.innerText = "₹ " + elem.price;
@@ -22,8 +22,7 @@ function appendData(data) {
     var strike_price = document.createElement("h5");
     if (elem.strike_price == "") {
       strike_price.innerText = elem.strike_price;
-    }
-    else {
+    } else {
       strike_price.innerText = "₹" + elem.strike_price;
     }
 
@@ -58,17 +57,16 @@ function appendData(data) {
 
     var priceCartDiv = document.createElement("div");
     priceCartDiv.append(priceStore, qdiv);
-    priceCartDiv.setAttribute("class", "priceCartDiv")
+    priceCartDiv.setAttribute("class", "priceCartDiv");
 
     var innerDiv = document.createElement("div");
     innerDiv.append(name, quantity, priceCartDiv, remove);
     innerDiv.setAttribute("class", "innerDiv");
 
-
     // var infoDiv = document.querySelector("div");
     // infoDiv.append(name, quantity, innerDiv, qdiv, remove);
 
-    mainDiv.append(img, innerDiv,);
+    mainDiv.append(img, innerDiv);
 
     container.append(mainDiv);
   });
@@ -102,7 +100,7 @@ aplBtn.innerText = "Apply Promo";
 aplBtn.setAttribute("id", "couponBtn");
 aplBtn.onclick = function () {
   if (coupon.value == "fraazo30") {
-    var discTotal = total * (70 / 100);
+    var discTotal = Math.floor(total * (70 / 100));
     //shashi
     var saveTotal = Math.floor(total * (30 / 100) + 1);
     var shipping = 30;
@@ -147,6 +145,6 @@ document
   .querySelector("#details")
   .append(totalItem, totalPrice, coupon, aplBtn);
 
-function send(){
+function send() {
   window.location.href = "checkout.html";
 }
