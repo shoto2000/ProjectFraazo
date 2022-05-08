@@ -193,3 +193,88 @@ h1 {
     color: white;
     background-color: teal;
 }
+
+
+/*---------- product Page MEDIA Quries- MEDIUM SCREEN----- */
+@media all and (min-width:751px)  and (max-width:1024px) {
+    #root {
+        display: block;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid; */
+    }
+    #container {
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    #container>div {
+        width: 100%;
+    }
+    #container>div>img {
+        width: 25%;
+        background-color:white;
+        float: left;
+        margin-right: 25px;
+    }
+    #container .innerDiv{
+        height: 90%;padding-top: 0px;
+    }
+    /* .priceCartDiv+button{
+        margin-top: 3%;
+    } */
+    #price-checkout{
+        width: 70%;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+}
+
+/*---------- product Page MEDIA Quries- SMALL SCREEN----- */
+@media all and (min-width:200px)  and (max-width:750px) {
+    #root {
+        display: block;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid; */
+    }
+    #container {
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    #container>div {
+        width: 100%;
+    }
+    #container>div>img {
+        width: 25%;
+        background-color:white;
+        float: left;
+        margin-right: 25px;
+    }
+    #container .innerDiv{
+        height: 90%;padding-top: 0px;
+    }
+    /* .priceCartDiv+button{
+        margin-top: 3%;
+    } */
+    #price-checkout{
+        width: 70%;
+        line-height: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .priceStore{
+        margin-top: 0px;
+        /* border: 1px solid black; */
+    }
+    .innerDiv>p,
+    .innerDiv>p+p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
