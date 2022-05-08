@@ -155,7 +155,7 @@ a {
         margin-left: 15px;
     
     }
-    #footer >p,
+    /* #footer >p,
     #footer >h1 {
         display: none;
     }
@@ -178,7 +178,7 @@ a {
     }
     #footer_content>div:nth-child(4){
         padding-left: 20%;
-    }
+    } */
 }
 
 
@@ -203,7 +203,7 @@ a {
     
     }
     #footer{
-        display: none;
+        /* display: none; */
     }
     .product_card>div {
         /* border: 1px solid rgb(246, 0, 0); */
@@ -232,7 +232,7 @@ a {
 }
 
 /*---------- product Page MEDIA Quries- VERY SMALL SCREEN----- */
-@media all and (min-width:100px)  and (max-width:400px) {
+/* @media all and (min-width:100px)  and (max-width:400px) {
     #products_page{
         display: block;
     }
@@ -283,4 +283,4 @@ a {
         padding-left: 3px;
     }
 
-}
+} */

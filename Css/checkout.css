@@ -214,7 +214,7 @@ a {
 }
 
 /* footer */
-#footer_content > div {
+/* #footer_content > div {
   background-color: #0d5241;
   width: 100%;
 }
@@ -236,7 +236,7 @@ div > p {
 p > b {
   background-color: #0d5241;
   color: white;
-}
+} */
 .ttl > spam {
   background-color: #47c09d;
 }
