@@ -45,6 +45,7 @@
                 out2.style.display = "block"
                 document.querySelector(".otp-container").classList.add("active") ;
                 document.querySelector("#spana").innerText = mobileNum ;
+                alert("Your OTP is: 123456");
                 
             })
             

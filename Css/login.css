@@ -251,3 +251,6 @@
     #user:hover{
         color: black;
     }
+#status>label{
+    width: 30px;
+}

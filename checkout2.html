@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="Css/common.css">
     <link rel="stylesheet" href="Css/common01.css" />
+    <link rel="stylesheet" href="Css/acordian.css">
     <link rel="stylesheet" href="Css/checkout2.css" />
     <title>Location</title>
 
@@ -37,8 +38,8 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           
       </div>
-      <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart<span id="carttop"></span></a></div>
-      <div><i class="fa-solid fa-wallet"></i>Credits</div>
+      <div><i class="fa-solid fa-cart-shopping-fast"></i><a href="cart.html">Cart<span id="carttop"></span></span></a></div>
+      <div><i class="fa-solid fa-wallet"></i><a href="credits.html">Credits</a></div>
       <div><i class="fa-solid fa-user"></i><div id="user">Login</div></div>
   </div>
     <!-- header end-->
@@ -214,12 +215,6 @@
 </html>
 
 <script src="js/productcommon.js"></script>
-<script>
-    var mangoesData = JSON.parse(localStorage.getItem("mangoesArr"));
-    
-
-    display(mangoesData);
-</script>
 <script src="js/cartAdd.js"></script>
   
 <!-- ---------- Login JS ------------- -->
