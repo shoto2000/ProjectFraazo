@@ -310,6 +310,44 @@ p > b {
   background-color: #0d5241;
   color: white;
 }
-.ttl > spam{
+.ttl > spam {
   background-color: #47c09d;
+}
+
+/* //////////////////////////// */
+@media all and (min-width: 400px) and (max-width: 750px) {
+  body {
+    /* background-color: greenyellow; */
+  }
+  #masterCard {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .subMaster {
+    width: 90%;
+  }
+  #paymentType {
+    width: 35%;
+  }
+  .subMaster1 {
+    margin: auto;
+    /* border: blue 1px solid; */
+    height: 100%;
+    width: 90%;
+    margin-top: 15px;
+    margin-top: 50px;
+  }
+  #displayTotal {
+    margin-top: 25px;
+  }
+  tbody > tr {
+    width: 80%;
+  }
+  #refCard {
+    text-align: center;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+  }
 }
