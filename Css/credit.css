@@ -18,34 +18,34 @@ body {
     justify-content: space-between;
 }
 
-#credit_page>#leftbar {
+#leftbar {
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#credit_page>#leftbar>.user_profile {
-    margin: auto;
-    display: block;
+#leftbar>.user_profile {
+    margin: 0px auto;
     align-items: center;
     width: 30%;
+
 }
 
-#credit_page>#leftbar>.user_profile>img {
+#leftbar>.user_profile>img {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 
 }
 
-#credit_page>#leftbar>p {
+#leftbar>p {
     text-decoration: none;
     cursor: pointer;
     color: black;
     padding: 10px 20px 10px 20px;
 }
 
-#credit_page>#leftbar>p>a {
+#leftbar>p>a {
     text-decoration: none;
     color: black;
 }
@@ -59,7 +59,7 @@ body {
 #rightbar>h2,
 p {
     text-align: left;
-    color: black;
+    /* color: black; */
 }
 
 /* product======================== */
@@ -90,11 +90,61 @@ p {
     color: gray;
 }
 #orders>div>div>p:nth-child(1){
-    height: 50px;
+    height: 60px;
 }
 #orders>div>div>p:nth-child(2){
     margin: -15px 0px;
 }
 #orders>div>div>p:nth-child(3){
     color: teal;
+}
+
+/* medium screen */
+
+@media all and (min-width:751px) and (max-width:1024px){
+    #leftbar{
+        width: 30%;
+    }
+
+    #rightbar{
+        width: 65%;
+    }
+
+    #orders{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media all and (max-width:750px){
+    #credit_page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leftbar{
+        width: 100%;
+    }
+
+    #rightbar{
+        width: 100%;
+    }
+
+    #orders{
+        display: flex;
+        flex-direction: column;
+    }
+    #orders>div{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #orders>div>img{
+        width: 35%;
+    }
+
+    #orders>div >div {
+        width: 60%;
+    }
 }

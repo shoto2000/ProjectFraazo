@@ -78,6 +78,10 @@ span {
 
 }
 
+#carttop{
+    font-size: 16px
+}
+
 /* <!-- ------------------------------------------------------------------------------------------------------------------ --> */
 #first-screen {
     /* margin-top: 50px; */
@@ -234,16 +238,18 @@ h1 {
     margin-top: -25px;
 }
 
-#footer>p {
+#footer p {
     font-size: 12px;
     width: 95%;
     text-align: justify;
     margin: auto;
+    color: white;
 
 }
 
-#footer>h3 {
+#footer h3 {
     text-align: center;
+    color: white;
 
 }
 
@@ -253,6 +259,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px;
+}
+
+#footer b{
+    color: white;
 }
 
 #footer1 img {
@@ -324,10 +334,10 @@ h1 {
         text-align: center;
     }
 
-    #footer>p,
+    /* #footer>p,
     #footer>h1 {
         display: none;
-    }
+    } */
 
     #footer_content {
         display: grid;
