@@ -40,7 +40,7 @@
         /* -------------------------------   ---Products Container Common Styling----------------------------------------------------------- */
         
         #best-deals,#mangoes,#vegetables,#fruites,#herbs,#dryfruites,#kitchen{
-            width: 90%;
+            width: 95%;
             margin: auto;
             display: flex;
             justify-content: center;
@@ -49,21 +49,26 @@
         
         /* -------------------------------------------------------For Best-Deals------------------------------------------------------------- */
         #best-deals::-webkit-scrollbar {
-            visibility: hidden;
+            /* visibility: hidden; */
+            display: none;
         }
         
         #best-deals>div{
             min-width: 19%;
             margin-right: 20px;
-            border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid rgb(237, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
             border-radius: 10px;
+        }
+
+        #best-deals>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         #best-deals>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #best-deals>div>div{
@@ -118,18 +123,24 @@
         /* -------------------------------------------------------For mangoes------------------------------------------------------------- */
         #mangoes::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         #mangoes>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px; */
         }
+
+        #mangoes>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
         #mangoes>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #mangoes>div>div{
@@ -183,24 +194,25 @@
          /* -------------------------------------------------------For Fruites---------------------------------------------------------------- */
          #fruites::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         
         #fruites>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px; */
+        }
+
+        #fruites>div:hover{
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
         }
-         #fruites>div{
-            border: 1px solid rgb(236, 235, 235);
-            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-            border-radius: 10px;
-        }
+
         #fruites>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #fruites>div>div{
@@ -254,19 +266,25 @@
 
         #vegetables::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         
         #vegetables>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px; */
         }
+
+        #vegetables>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
         #vegetables>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #vegetables>div>div{
@@ -321,19 +339,25 @@
 
         #herbs::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         
         #herbs>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            /* border-radius: 10px; */
         }
+        
+        #herbs>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
         #herbs>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #herbs>div>div{
@@ -387,19 +411,25 @@
 
         #dryfruites::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         
         #dryfruites>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            /* border-radius: 10px; */
         }
+
+        #dryfruites>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
         #dryfruites>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #dryfruites>div>div{
@@ -454,19 +484,25 @@
 
          #kitchen::-webkit-scrollbar {
             visibility: hidden;
+            display: none;
         }
         
         #kitchen>div{
             min-width: 19%;
             margin-right: 20px;
             border: 1px solid rgb(237, 228, 228);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            /* border-radius: 10px; */
         }
+        
+        #kitchen>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
         #kitchen>div>img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
             background-color: rgb(245, 243, 243);
         }
         #kitchen>div>div{
@@ -515,4 +551,161 @@
             color: white;
             background-color: #4FBB90;
             cursor: pointer;
+        }
+
+        @media all and (min-width:751px) and (max-width:1024px){
+            #best-deals>div{
+                min-width: 27%;
+            }
+            #mangoes>div{
+                min-width: 27%;
+            }
+            #fruites>div{
+                min-width: 27%;
+            }
+            #vegetables>div{
+                min-width: 27%;
+            }
+            #herbs>div{
+                min-width: 27%;
+            }
+            #dryfruites>div{
+                min-width: 27%;
+            }
+            #kitchen>div{
+                min-width: 27%;
+            }
+
+        }
+
+        @media all and (max-width:750px){
+            .left_right{
+                display: none;
+            }
+            #best-deals{
+                display: block;
+            }
+            #best-deals > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #best-deals > div > img{
+                width: 35%;
+            }
+            
+            #best-deals > div > div{
+                width: 60%;
+            }
+
+            #mangoes{
+                display: block;
+            }
+            #mangoes > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #mangoes > div > img{
+                width: 35%;
+            }
+            
+            #mangoes > div > div{
+                width: 60%;
+            }
+            
+            #fruites{
+                display: block;
+            }
+            #fruites > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #fruites > div > img{
+                width: 35%;
+            }
+            
+            #fruites > div > div{
+                width: 60%;
+            }
+            
+            #vegetables{
+                display: block;
+            }
+            #vegetables > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #vegetables > div > img{
+                width: 35%;
+            }
+            
+            #vegetables > div > div{
+                width: 60%;
+            }
+            
+            #herbs{
+                display: block;
+            }
+            #herbs > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #herbs > div > img{
+                width: 35%;
+            }
+            
+            #herbs > div > div{
+                width: 60%;
+            }
+            
+            #dryfruites{
+                display: block;
+            }
+            #dryfruites > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #dryfruites > div > img{
+                width: 35%;
+            }
+            
+            #dryfruites > div > div{
+                width: 60%;
+            }
+            
+            #kitchen{
+                display: block;
+            }
+            #kitchen > div{
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-between;
+            }
+
+            #kitchen > div > img{
+                width: 35%;
+            }
+            
+            #kitchen > div > div{
+                width: 60%;
+            }
+            
         }
