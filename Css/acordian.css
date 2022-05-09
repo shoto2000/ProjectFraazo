@@ -184,7 +184,7 @@ a {
 
 
 /*---------- product Page MEDIA Quries- SMALL SCREEN----- */
-@media all and (min-width:401px)  and (max-width:750px) {
+@media all and (max-width:750px) {
 
     #products_page{
         display: block;
