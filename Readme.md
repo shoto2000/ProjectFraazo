@@ -65,7 +65,7 @@ Also added the responsivness so user can use the site in any device they have.
 - Github
 
 ## Site Made by Us
-[Click Here for Netlify Link](https://sensational-flan-0b5daa.netlify.app/)
+[Click Here for Netlify Link](https://fraazoclone.netlify.app/)
 
 ## Copy this link to clone the Github Repository
 https://github.com/shoto2000/ProjectFraazo.git
